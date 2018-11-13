@@ -30,6 +30,8 @@ gem 'jquery-easing-rails'
 gem 'popper'
 gem 'popper_js'
 gem 'rails_admin'
+gem 'carrierwave'
+gem 'cloudinary'
 
 
 group :development, :test do

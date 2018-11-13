@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181108120915) do
+ActiveRecord::Schema.define(version: 20181113095358) do
 
   create_table "hotel_pictures", force: :cascade do |t|
     t.integer  "user_id",      null: false
@@ -37,7 +37,6 @@ ActiveRecord::Schema.define(version: 20181108120915) do
     t.string   "hotel_name",         null: false
     t.string   "hotel_address",      null: false
     t.string   "hotel_phone_number", null: false
-    t.integer  "hotel_price"
     t.string   "hotel_pr"
     t.integer  "hotel_area"
     t.integer  "hotel_rating"
@@ -45,6 +44,7 @@ ActiveRecord::Schema.define(version: 20181108120915) do
     t.string   "hotel_owner",        null: false
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
+    t.string   "picture"
   end
 
   create_table "rooms", force: :cascade do |t|
